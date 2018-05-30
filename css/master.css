@@ -1,0 +1,244 @@
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+  background-image: url('../images/trianglifyMore.png');
+  background-size: cover;
+  border: 5px solid black;
+}
+/* GLOBAL */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* START OF NAV */
+nav {
+  background: #333032;
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  padding-bottom: 10px;
+  height: 35px;
+  width: 100%;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 13px;
+}
+nav .menu-btn {
+  border: none;
+  background: none;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  width: 73px;
+  height: 45px;
+}
+nav .menu-btn:hover {
+  background: #151b1b;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+#main-ul {
+  position: absolute;
+  background: #333032;
+  width: 200px;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+  height: 500px;
+  width: inherit;
+}
+#main-ul li a, #main-ul .dropped {
+  display: block;
+  padding: 14px 15px;
+}
+li a:hover{
+  text-decoration-line: line-through;
+  color: red;
+}
+
+/* TOGGLE MENU */
+#main-ul.slide {
+  transform: translateX(0%);
+}
+@media screen and (min-width: 768px) {
+  nav .menu-btn {
+    display: none;
+  }
+  #main-ul {
+    position: initial;
+    transform: translateX(0%);
+    display: flex;
+    height: inherit;
+  }
+  nav{
+    width: inherit;
+  }
+}
+
+/* END of NAV */
+
+/* START OF TITLECARD */
+/* Header */
+.large-header {
+	position: relative;
+	width: 100%;
+	/* background: #333; */
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+.dud{
+  color:#757575;
+}
+
+#large-header {
+  max-height: 470px;
+  border-bottom: 5px solid black;
+}
+
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+  font-family: 'Marvel', sans-serif;
+  font-size: 50px;
+}
+
+.demo-1 .main-title {
+	text-transform: uppercase;
+	font-size: 4.2em;
+	letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+	font-weight: 200;
+  color: grey;
+}
+
+@media only screen and (max-width : 768px) {
+	.demo-1 .main-title {
+		font-size: 3em;
+	}
+}
+/* END OF TITLE CARD */
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+.about{
+  color: white;
+  position: relative;
+  text-align: center;
+}
+.about h2{
+ font-family: 'Poiret One', cursive;
+}
+.about img{
+  border-radius: 50%;
+  max-height: 166px;
+}
+.about hr{
+  width: 30%;
+  margin-top: -10px;
+}
+.about p{
+  display: inline-flex;
+  width: 70%;
+}
+.skillsHeader{
+  color: white;
+  position: relative;
+  text-align: center;
+}
+hr{
+  width: 30%;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.skills {
+  display: flex;
+}
+.skills .col {
+  padding-top: 10px;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+}
+.skills .col i{
+  font-size: 50px;
+}
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
+}
+.projects{
+  text-align: center;
+}
+.projects h2{
+  font-family: 'Poiret One', cursive;
+}
+.projects div{
+  width: 70%;
+  margin: 50px auto 50px auto;
+}
+.projects img{
+  width: 100%;
+  height: 100%;
+}
+.projects p{
+  padding-left: 15%;
+  text-align: center;
+  padding-right: 15%;
+  display: inline-flex;
+}
+.projects div{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project a{
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact{
+  text-align: center;
+}
+.contact h2{
+  font-family: 'Poiret One', cursive;
+}
+.contact a{
+  font-size: 29px;
+  margin: 12px 24px 10px 10px;
+  color: black;
+}
+.contact h1{
+  color: white;
+}
+.footer{
+  height: 20px;
+  background: #333032;
+  position: sticky;
+  bottom: -2px;
+  z-index: 1000;
+}
