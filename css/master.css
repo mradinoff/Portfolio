@@ -161,25 +161,27 @@ canvas {
   margin-top: -10px;
 }
 .about p{
-  display: inline-flex;
+  display: block;
   margin: 0 auto;
   text-align: center;
   margin-top: 20px;
+  max-width: 70%;
+  font-family: 'Questrial', sans-serif;
+
 }
 .skillsHeader{
   color: white;
   position: relative;
   text-align: center;
   font-family: 'Poiret One', cursive;
+  display: none;
 }
 hr{
   width: 30%;
   margin-top: -10px;
   margin-bottom: 10px;
 }
-.skills {
-  display: flex;
-}
+
 @media (max-width: 400px) {
   .flex-grid {
     display: block;
@@ -202,6 +204,7 @@ strong{
 .projects img{
   width: 100%;
   height: 100%;
+  margin-bottom: 20px;
 }
 .projects p{
   padding-left: 15%;
@@ -211,6 +214,7 @@ strong{
   font-family: 'Questrial', sans-serif;
   letter-spacing: 1px;
   line-height: 1.5;
+  margin: 10px 0 10px 0;
 }
 .projects div{
   background-color: #f7f7f7;
@@ -220,12 +224,15 @@ strong{
 .projects a{
   text-decoration: none;
   font-weight: bold;
+  color: black;
 }
-.projects h3{
+.projects a:hover{
+  text-decoration: underline;
+}
+.projects .projectHeader{
   color: black;
   font-family: 'Poiret One', cursive;
-  font-size: 20px;
-  text-decoration: underline;
+  font-size: 26px;
   margin-bottom: -3px;
 }
 #earbuddies p{
@@ -244,7 +251,7 @@ strong{
   font-family: 'Poiret One', cursive;
 }
 .contact a{
-  font-size: 29px;
+  font-size: 53px;
   margin: 12px 24px 10px 10px;
   color: black;
 }
