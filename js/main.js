@@ -274,3 +274,10 @@ const next = () => {
 }
 
 next()
+
+//Scroll on triangle click
+$("#scroll").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".about").offset().top -60},
+        'slow');
+});

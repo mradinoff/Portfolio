@@ -164,12 +164,14 @@ canvas {
 }
 .about p{
   display: inline-flex;
-  width: 70%;
+  margin: 0 auto;
+  text-align: center;
 }
 .skillsHeader{
   color: white;
   position: relative;
   text-align: center;
+  font-family: 'Poiret One', cursive;
 }
 hr{
   width: 30%;
@@ -178,15 +180,6 @@ hr{
 }
 .skills {
   display: flex;
-}
-.skills .col {
-  padding-top: 10px;
-  margin: 0 auto;
-  height: 50px;
-  width: 50px;
-}
-.skills .col i{
-  font-size: 50px;
 }
 @media (max-width: 400px) {
   .flex-grid {
@@ -197,6 +190,7 @@ hr{
   text-align: center;
 }
 .projects h2{
+  color: white;
   font-family: 'Poiret One', cursive;
 }
 .projects div{
@@ -221,6 +215,21 @@ hr{
   text-decoration: none;
   font-weight: bold;
 }
+#earbuddies p{
+  background-color: #4ec6e2;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+#ticTacToe p{
+  background-color: #818181;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+#gallery p{
+  background-color: #dcd1a3;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
 .contact{
   text-align: center;
 }
@@ -232,7 +241,7 @@ hr{
   margin: 12px 24px 10px 10px;
   color: black;
 }
-.contact h1{
+.contact h2{
   color: white;
 }
 .footer{
