@@ -281,3 +281,24 @@ $("#scroll").click(function() {
         scrollTop: $(".about").offset().top -60},
         'slow');
 });
+//Nav scroll, needs refactoring
+$("#home").click(function() {
+    $('html,body').animate({
+        scrollTop: $("large-header").offset().top},
+        'slow');
+});
+$("#about").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".about").offset().top -60},
+        'slow');
+});
+$("#projects").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".projects").offset().top -60},
+        'slow');
+});
+$("#contact").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".contact").offset().top -60},
+        'slow');
+});
