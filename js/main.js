@@ -284,7 +284,7 @@ $("#scroll").click(function() {
 //Nav scroll, needs refactoring
 $("#home").click(function() { //This needs fixing
     $('html,body').animate({
-        scrollTop: $("large-header").offset().top},
+        scrollTop: $(".large-header").offset().top},
         'slow');
 });
 $("#about").click(function() {
