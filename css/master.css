@@ -52,16 +52,20 @@ nav a {
 
 #main-ul {
   position: absolute;
-  background: #333032;
   width: 200px;
   transform: translateX(-100%);
-  transition: transform 0.5s;
-  height: 500px;
+  background-color: black;
+  transition: transform, background-color 0.5s;
+  transition-property: background-color, transform;
+  height: 700px;
   width: inherit;
+  z-index: 500;
+
 }
 #main-ul li a, #main-ul .dropped {
   display: block;
   padding: 14px 15px;
+  min-width: 44px;
 }
 li a:hover{
   font-weight: bolder;
@@ -71,6 +75,8 @@ li a:hover{
 /* TOGGLE MENU */
 #main-ul.slide {
   transform: translateX(0%);
+  background: #333032;
+
 }
 @media screen and (min-width: 768px) {
   nav .menu-btn {
@@ -266,5 +272,5 @@ color: #96a0a3;
   background: #333032;
   position: sticky;
   bottom: -2px;
-  z-index: 1000;
+  z-index: 2000;
 }
